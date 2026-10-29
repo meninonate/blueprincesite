@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(11, 33, 78);
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    display: block; /* deixa na mesma linha */
+    width: 60%; /* largura */
+    height: auto; /* altura */
+    border-radius: 10px; /* arredonda os cantos */
+    margin: 0 auto 25px;
+}
+
+/* criei uma div TÍTULO, para que eu pudesse alterar as cores do h1, deixando azul e branco, assim como na logo do jogo.*/
+
+.titulo {
+    display: flex; /* deixa na mesma linha */
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* espaçamento entre as palavras */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    padding: 0; /* espaçamento interno do texto */
+    margin: 0; /* espaçamento externo do texto */
+
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+.prince {
+    color: white;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: dodgerblue;
+    font-weight: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(30, 144, 255, 0.45); /* faz uma borda só na parte de baixo em 2px (forma uma linha) */
+
+}
+
+h4{
+    color: rgb(172, 171, 171);
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic; /* deixa a fonte em itálico */
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.inicio,
+.desenvolvimento {
+    width: fit-content;
+    max-width: 1500px; /* define a largura máxima */
+    margin: 0 auto;
+}
+
+p {
+    color: rgb(235, 239, 248);
+    font-size: 16px;
+    text-align: justify; /* deixa o texto justificado */
+    line-height: 1.4; /* coloca um espaçamento curto entre os textos (p) */
+    margin: 0 auto 20px;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border: none; /* tira a borda */
+    border-radius: 8px;
+    padding: 18px 18px;
+    font-size: 18px;
+    font-weight: bold; /* deixa o texto em bold. define a espessura */
+    cursor: pointer; /* altera o cursor quando passar o mouse em cima do botão */
+    transition: background-color 0.2s, transform 0.2s;  /* transição de cor ao passar o mouse em cima do botão, alterando a cor do fundo (button:hover)*/
+}
+
+button:hover {
+    background-color: royalblue;  /* muda a cor */
+    transform: scale(1.03); /* crescer o botão */
+}
